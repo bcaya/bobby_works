@@ -18,7 +18,7 @@ export class Box extends HTMLElement {
         styleEl.innerHTML = `
           [data-i="${this.i}"] {
             padding: ${this.padding};
-            border: ${this.borderWidth} solid;
+            border: ${this.borderWidth} dashed;
             ${this.invert ?
             `background-color: var(--color-light);
               filter: invert(100%);`

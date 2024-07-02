@@ -9,10 +9,12 @@ export default function Header(){
 }
   return(
     <header>
-      <Link className="site-logo" to="/">Bobby.Works</Link>
-      <nav>
-        <cluster-l justify="center">
-        <NavLink
+        <cluster-l align="baseline" justify="space-between">
+  
+          <Link className="site-logo" to="/">Bobby.Works</Link>
+        <nav> 
+      
+      <NavLink
           to="/about"
           style={({isActive}) => isActive ? activeStyles : null}
           >
@@ -30,8 +32,12 @@ export default function Header(){
           >
             Contact
           </NavLink>
-          </cluster-l>
+     
+     
       </nav>
+        
+          </cluster-l>
+          
     </header>
   )
 }

@@ -1,5 +1,25 @@
+*{
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-special);
+  font-weight: 700;
+  font-style: italic;
+}
+body{
+  font-family:var(--font-plain);
+  margin:0;
+}
+
 :root {
-  font-family: "Poppins", sans-serif;                                           
+  --font-plain: "IBM Plex Sans", sans-serif;
+  --font-special:"Barlow Condensed", sans-serif;
+  font-style: normal;                                        
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
@@ -42,6 +62,7 @@ a {
 }
 p{
   max-inline-size:60ch;
+  font-size:var(--s0)
 }
 img {
   max-inline-size: 100%;
@@ -175,17 +196,12 @@ a{
 }
 
 /* Typography */
-
-
-/* Header  */
 header .site-logo{
-  margin-right: auto;
-  font-weight: 900;
-  font-size: 2.0rem;
-  
-  
+    font-size:xx-large;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 800;
+    font-style: italic;
 }
-
 a:hover {
   color: var(--color-pink);
   text-decoration: underline;
@@ -193,11 +209,19 @@ a:hover {
 
 header {
   height: 5rem;
-  display:flex;
-  align-items: center;
   padding-bottom: 1rem;
 }
 header a{
   text-decoration: underline;
   padding: .4rem 1.3rem;
+  font-size:large;
 }
+
+.records-subheader{
+  font-family: "Inconsolata", monospace;
+}
+
+/* .about-container p {
+  columns: 250px 3;
+
+} */
