@@ -187,7 +187,14 @@ switcher-l > * {
   flex-grow: 1;
 }
 
-
+input[type=text], select {
+  border: 2px solid var(--color-accent);
+  border-radius: 4px;
+  padding: var(--s-3);
+}
+input[type=text]:focus-visible, select:focus {
+  border: 2px solid var(--color-pink);
+}
 /* Media Queries */
 
 @media (prefers-color-scheme: dark) {
@@ -225,7 +232,9 @@ a:hover {
   text-decoration: underline var(--color-pink);
 
 }
-
+.separator a{
+  color:var(--color-pink);
+}
 /* Nav*/ 
 header {
   padding-bottom: 1rem;

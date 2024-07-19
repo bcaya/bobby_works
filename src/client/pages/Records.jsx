@@ -66,13 +66,12 @@ function sortRecords(option) {
 return(
 <box-l  borderWidth="0">
   <stack-l space="var(--s-5)">
-  <div className=" separator white-bg">
+
     <center-l>
     <h1 className="records-header">My Record Collection</h1>
-    <p><span className="records-subheader">Using data from the <a href="#">Discogs API</a></span></p>
+    <p><span className="records-subheader">Using data from the <a href="https://www.discogs.com/developers" target="_blank">Discogs API</a></span></p>
     </center-l>
-    </div>
-
+  <form >
 <sidebar-l side="right" space="0" contentMin="50%">
 <input
   type="text"
@@ -80,7 +79,6 @@ return(
   value={query}
   onChange={handleChange}
 />
-<form >
   <label htmlFor="sorting">Sort By</label>
   <select name="sorting-option" id="sorting-options" onChange={handleSortChange}>
   <option value="">Select an option</option>
@@ -89,8 +87,8 @@ return(
     <option value="date-added">Date Added to Collection</option>
     <option value="release-date">Release Date</option>
   </select>
-</form>
     </sidebar-l>
+</form>
   
   </stack-l>
   <box-l borderWidth="0" padding="var(--s1)">
