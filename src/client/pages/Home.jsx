@@ -2,7 +2,7 @@ import React from 'react'
 import { animateScroll as scroll } from 'react-scroll'
 import About from './About'
 import Projects from './Projects'
-import '../assets/StylesMain'
+import '../../../public/StylesMain'
 import Contact from './Contact'
 
 export default function Home(){
