@@ -6,7 +6,6 @@ import Records from "./pages/Records";
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import "./App.css";
 import RecordDetailPage from "./pages/RecordDetails";
-
 function App() {
 
   return (

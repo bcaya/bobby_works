@@ -218,17 +218,20 @@ header .site-logo{
 a{
   text-decoration-thickness: 2px;
   text-underline-offset: .2ex;
+  cursor: pointer;
 }
 a:hover {
-  color: var(--color-pink);
-  text-decoration: underline;
+  
+  text-decoration: underline var(--color-pink);
+
 }
+
 /* Nav*/ 
 header {
   padding-bottom: 1rem;
 }
  a{
-  font-size:larger;
+  font-size:large;
   font-weight:600;
   color:var(--color-dark);
   text-decoration: underline solid var(--color-accent);
@@ -254,7 +257,9 @@ hr.hr-styling{
   text-decoration: underline solid var(--color-accent);
 }
 
-
+.record-cover {
+  max-width:16rem;
+}
 .record-title, .record-artist {
   font-size:small;
   font-family:var(--font-plain);
@@ -270,5 +275,17 @@ hr.hr-styling{
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .separator{
+  display: flex;
   min-height: 5rem;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.separator a, .separator h1, .separator p{
+padding:0;
+text-decoration: underline solid var(--color-accent);  
+}
+
+.separator a:hover{
+  color: var(--color-pink);
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import '../assets/StylesMain'
 import { fetchFromDiscogs } from './utils'
-
+import { PacmanLoader } from 'react-spinners'
 export default function Records(){
   const [records, setRecords] = React.useState([])
   const [sortOption, setSortOption] = React.useState('');
@@ -27,7 +27,7 @@ export default function Records(){
     loadRecords()
    
   },[])
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <box-l><center-l><PacmanLoader size="60" /></center-l></box-l>;
   if (error) return <div>Error: {error.message}</div>;
 function handleChange(e) {
   setQuery(e.target.value);
@@ -66,11 +66,12 @@ function sortRecords(option) {
 return(
 <box-l  borderWidth="0">
   <stack-l space="var(--s-5)">
+  <div className=" separator white-bg">
     <center-l>
     <h1 className="records-header">My Record Collection</h1>
-    <p><span className="records-subheader">Using data from the Discogs API</span></p>
+    <p><span className="records-subheader">Using data from the <a href="#">Discogs API</a></span></p>
     </center-l>
- 
+    </div>
 
 <sidebar-l side="right" space="0" contentMin="50%">
 <input

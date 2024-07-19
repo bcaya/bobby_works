@@ -49,8 +49,8 @@ function ReleaseNotesEl(){
       const options = {
         weekday: 'long', year: 'numeric', month: 'long', day: 'numeric',
       };
-      return <box-l key={recordData.id}>
-            <box-l>
+      return <box-l borderWidth="0" key={recordData.id}>
+            <box-l borderWidth="0">
             <Link 
           to=".." //this is a link back to the relative path aka so you can go back to what you weere prev looking at. 
           relative="path"
@@ -59,8 +59,17 @@ function ReleaseNotesEl(){
             </box-l> 
       <h1>{recordData.artists[0].name} - {recordData.title}</h1>
       <h5>Added to my collection on {new Date(dateAdded).toLocaleDateString('en-US', options)}</h5>
-      <box-l ><frame-l ratio="1:1"><img src={recordData.cover_image}/></frame-l></box-l>
-      <box-l>
+      <sidebar-l sideWidth="18rem">
+        <box-l borderWidth="0">
+        <box-l borderWidth="0" padding="0">
+          <div >
+          <frame-l ratio="1:1">
+            <img  src={recordData.cover_image}/>
+          </frame-l>
+          </div>
+        </box-l>
+      <stack-l>
+      <box-l borderWidth="0">
       <h4>Release year: {recordData.year}</h4>
         <h3>Labels: </h3> 
           <cluster-l>
@@ -68,24 +77,18 @@ function ReleaseNotesEl(){
         return(<button key={label.id}>{label.name}</button>)  
         })}
           </cluster-l>
-      </box-l>
-      <box-l>
-        <h3>Genres</h3>
+          <h3>Genres</h3>
         <cluster-l>
         {recordData.genres.map((genre) => {
           return (<button key={genre}>{genre}</button>)
         })}
         </cluster-l>
-      </box-l>
-      <box-l>
         <h3>Styles</h3>
         <cluster-l>
           {recordData.styles.map((style) => {
             return (<button>{style}</button>)
           })}
         </cluster-l>
-      </box-l>
-      <box-l>
         <h3>Formats</h3>
       <cluster-l>
       {recordData.formats[0].descriptions.map((description) => {
@@ -93,10 +96,18 @@ function ReleaseNotesEl(){
       })}
       </cluster-l>
       </box-l>
-      <box-l>
+      </stack-l>
+        </box-l>
+      <box-l borderWidth="0">
+        <p>Release Photos</p>
+      <reel-l itemWidth="15rem">
+      <ImageEl/>
+    </reel-l>
         <h3>Release Notes</h3>
         <ReleaseNotesEl/>
+
       </box-l>
+      </sidebar-l>
       </box-l>
 }
  if(loading){
@@ -109,14 +120,7 @@ if(error){
 }
  return (
   <box-l borderWidth="0">
-    <stack-l>
     <RecordEl/>
-   
-    <reel-l itemWidth="25rem">
-      <ImageEl/>
-    </reel-l>
-    </stack-l>
-
   </box-l>
   
  )
