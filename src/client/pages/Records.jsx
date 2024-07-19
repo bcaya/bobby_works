@@ -35,7 +35,7 @@ function handleChange(e) {
         // Filter items based on search query
         const filtered = records.filter((record) =>
           record.basic_information.title.toLowerCase().includes(query.toLowerCase()) ||
-        record.basic_information.artists[0].name.toLowerCase().includes(query.toLowerCase())
+        record.basic_information.artists[0].name.toLowerCase().includes(query.toLowerCase()) || record.basic_information.genres[0].toLowerCase().includes(query.toLowerCase())
         );
         setFilteredRecords(filtered);
       };
@@ -69,8 +69,10 @@ return(
     <center-l>
     <h1 className="records-header">My Record Collection</h1>
     <p><span className="records-subheader">Using data from the Discogs API</span></p>
+    </center-l>
+ 
 
-
+<sidebar-l side="right" space="0" contentMin="50%">
 <input
   type="text"
   placeholder="Search..."
@@ -87,23 +89,26 @@ return(
     <option value="release-date">Release Date</option>
   </select>
 </form>
-
-    </center-l>
-   
-
+    </sidebar-l>
   
   </stack-l>
   <box-l borderWidth="0" padding="var(--s1)">
   <grid-l space="var(--s-4)" min="calc(var(--measure) / 4)">
     {filteredRecords.map((record) => (
   <box-l borderWidth="0" padding="var(--s-3)" key={record.id}>
-      <div>
+      <div className="record-card">
         <Link to={`/records/${record.basic_information.id}`}
               state={{recordData: record.basic_information,
                       dateAdded: record.date_added,
                       id: record.basic_information.id
               }}>
+        <div className="record-image">
         <frame-l ratio="1:1"><img src={record.basic_information.cover_image} alt={record.basic_information.title}/></frame-l>
+        </div>
+        <stack-l className="record-text" space="var(--s-5)">
+        <span className="record-title">{record.basic_information.title}</span>
+        <span className="record-artist">{record.basic_information.artists[0].name}</span>
+        </stack-l>
         </Link>
       </div> 
   </box-l>  

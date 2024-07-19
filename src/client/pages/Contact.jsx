@@ -3,37 +3,62 @@ import '../assets/StylesMain'
 
 export default function Contact(){
   return(
-    <box-l padding="var(--s3)">
-        <stack-l space="1rem" role="list">
-        <h2><icon-l><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.018 3.815 15.232 8h-4.966l.716-3.815-1.964-.37L8.232 8H4v2h3.857l-.751 4H3v2h3.731l-.714 3.805 1.965.369L8.766 16h4.966l-.714 3.805 1.965.369.783-4.174H20v-2h-3.859l.751-4H21V8h-3.733l.716-3.815-1.965-.37zM14.106 14H9.141l.751-4h4.966l-.752 4z"/></svg></icon-l>contact</h2>
+    <box-l id="contact" className="contact" borderWidth="0" padding="var(--s3)">
+      <cluster-l justify="space-evenly">
+      <stack-l space="var(--s0)">
+      <box-l  padding="0" borderWidth="0">
+       <h2><icon-l><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.018 3.815 15.232 8h-4.966l.716-3.815-1.964-.37L8.232 8H4v2h3.857l-.751 4H3v2h3.731l-.714 3.805 1.965.369L8.766 16h4.966l-.714 3.805 1.965.369.783-4.174H20v-2h-3.859l.751-4H21V8h-3.733l.716-3.815-1.965-.37zM14.106 14H9.141l.751-4h4.966l-.752 4z"/></svg></icon-l>contact</h2>
+       </box-l>
+      <ul>
+        <li> 
+         <box-l borderWidth="0" role="listitem">
+          <a href="mailto:bob.caya1@gmail.com">email</a>
+         </box-l>
+        </li>
+        <li>
         <box-l borderWidth="0" role="listitem">
-          <icon-l><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.018 3.815 15.232 8h-4.966l.716-3.815-1.964-.37L8.232 8H4v2h3.857l-.751 4H3v2h3.731l-.714 3.805 1.965.369L8.766 16h4.966l-.714 3.805 1.965.369.783-4.174H20v-2h-3.859l.751-4H21V8h-3.733l.716-3.815-1.965-.37zM14.106 14H9.141l.751-4h4.966l-.752 4z"/></svg></icon-l><a href="#">email</a>
+            <a href="https://github.com/bcaya" target="_blank">github</a>
           </box-l>
-            <box-l borderWidth="0" role="listitem">
-            <a href="#">github</a>
+          <li>
+        <box-l borderWidth="0" role="listitem">
+            <a href="https://www.linkedin.com/in/bobby-caya/" target="_blank">linkedin</a>
           </box-l>
-            <box-l borderWidth="0" role="listitem">
-              <icon-l>
-              <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z"></path></svg>
-              </icon-l>
-            <a href="#">
-            Linkedin</a>
-          </box-l>
-           <h3><icon-l><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.018 3.815 15.232 8h-4.966l.716-3.815-1.964-.37L8.232 8H4v2h3.857l-.751 4H3v2h3.731l-.714 3.805 1.965.369L8.766 16h4.966l-.714 3.805 1.965.369.783-4.174H20v-2h-3.859l.751-4H21V8h-3.733l.716-3.815-1.965-.37zM14.106 14H9.141l.751-4h4.966l-.752 4z"/></svg></icon-l>socials</h3>
-          <box-l borderWidth="0" role="listitem">
-          <a href="#">
+        </li> 
+        </li> 
+      </ul>
+      
+      </stack-l>
+      <stack-l>
+      <box-l  padding="0" borderWidth="0">
+       <h2><icon-l><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.018 3.815 15.232 8h-4.966l.716-3.815-1.964-.37L8.232 8H4v2h3.857l-.751 4H3v2h3.731l-.714 3.805 1.965.369L8.766 16h4.966l-.714 3.805 1.965.369.783-4.174H20v-2h-3.859l.751-4H21V8h-3.733l.716-3.815-1.965-.37zM14.106 14H9.141l.751-4h4.966l-.752 4z"/></svg></icon-l>socials</h2>
+       </box-l>
+      <ul>
+        <li> 
+          <box-l borderWidth="0">
+          <a href="https://www.instagram.com/cosmos_ghost/" target="_blank">
             instagram
           </a>
           </box-l>
-          
-          <box-l borderWidth="0" role="listitem">
-          <a href="#">
+        </li>
+        <li>
+          <box-l borderWidth="0">
+          <a href="https://open.spotify.com/user/cosmos_ghost?si=b20f5ce539304414" target="_blank">
             spotify
           </a>
           </box-l>
-        
+          </li>
+          <li>
+            <box-l borderWidth="0">
+              <a href="https://www.last.fm/user/cosmos_ghost" target="_blank">
+              last.fm</a>
+            </box-l>
+          </li>
+      </ul>
+      
       </stack-l>
-
-    </box-l>
+      </cluster-l>
+      
+      
+          </box-l>
   )
 }
