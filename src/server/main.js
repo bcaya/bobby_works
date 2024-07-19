@@ -3,16 +3,7 @@ import ViteExpress from "vite-express";
 import axios from "axios";
 
 const app = express();
-
-app.get("/hello", (req, res) => {
-  var list = ["item1", "item2", "item3"];
-  res.json(list);
-});
-app.get('/api/getList', (req,res) => {
-  var list = ["item1", "item2", "item3"];
-  res.json(list);
-  console.log('Sent list of items');
-});
+ViteExpress.config({ mode: "production" })
 
 app.get('/api/records', async (req, res) => {
   try {
