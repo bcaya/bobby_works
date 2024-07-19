@@ -1,7 +1,7 @@
 import React from "react"
 import {Outlet} from "react-router-dom"
 import Header from "../components/Header"
-import '../../../public/StylesMain'
+import '../assets/StylesMain'
 import Footer from "../components/Footer"
 import ScrollToHashElement from "@cascadia-code/scroll-to-hash-element";
 

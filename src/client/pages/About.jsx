@@ -1,5 +1,6 @@
 import React from 'react'
-import '../../../public/StylesMain'
+import '../assets/StylesMain'
+
 
 
 export default function About(){
@@ -53,14 +54,14 @@ export default function About(){
               <img src="src/client/assets/reel_image5_3x.jpg" alt="a descr" loading="lazy" decoding="async"/>
             </picture>
             <picture>
-              <source srcset="src/client/assets/reel_imagehd_4.jpg" media="(min-width:85rem)"/>
-              <source srcset="src/client/assets/reel_image4_1x.jpg" media="(min-width:75rem)"/>
-              <source srcset="src/client/assets/reel_image4_2x.jpg" media="(min-width:40rem)"/>
-              <img src="src/client/assets/reel_image4_3x.jpg" alt="a descr" loading="lazy" decoding="async"/>
+              <source srcset="public/reel_imagehd_4.jpg" media="(min-width:85rem)"/>
+              <source srcset="public/reel_image4_1x.jpg" media="(min-width:75rem)"/>
+              <source srcset="public/reel_image4_2x.jpg" media="(min-width:40rem)"/>
+              <img src="public/reel_image4_3x.jpg" alt="a descr" loading="lazy" decoding="async"/>
             </picture>
             <picture>
-              <source srcset="src/client/assets/reel_imagehd_1.jpg" media="(min-width:85rem)"/>
-              <source srcset="src/client/assets/reel_image1_1x.jpg" media="(min-width:75rem)"/>
+              <source srcset="public/reel_imagehd_1.jpg" media="(min-width:85rem)"/>
+              <source srcset="public/reel_image1_1x.jpg" media="(min-width:75rem)"/>
               <source srcset="src/client/assets/reel_image1_2x.jpg" media="(min-width:40rem)"/>
               <img src="src/client/assets/reel_image1_3x.jpg" alt="Photography Interest image of Wendover Will" loading="lazy" decoding="async"/>
             </picture>

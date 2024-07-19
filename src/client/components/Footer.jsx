@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import "../../../public/StylesMain";
+import "../assets/StylesMain";
 import { fetchLastFmData } from "../pages/utils";
 
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import '../../../public/StylesMain'
+import '../assets/StylesMain'
 
 export default function Projects(){
   return(
