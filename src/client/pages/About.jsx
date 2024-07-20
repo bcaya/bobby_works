@@ -1,6 +1,6 @@
 import React from 'react'
 import '../assets/StylesMain'
-import img1 from 'public/reel_imagehd_4.jpg'
+
 
 
 export default function About(){
@@ -22,10 +22,10 @@ export default function About(){
         <box-l padding="0" borderWidth="0">
           <reel-l itemWidth="300px">
           <picture>
-              <source srcset="src/client/assets/reel_imagehd_3.jpg" media="(min-width:85rem)"/>
-              <source srcset="src/client/assets/reel_image3_1x.jpg" media="(min-width:75rem)"/>
-              <source srcset="src/client/assets/reel_image3_2x.jpg" media="(min-width:40rem)"/>
-              <img src="src/client/assets/reel_image3_3x.jpg" alt="Profile Picture" loading="lazy" decoding="async"/>
+              <source srcset="/reel_imagehd_3.jpg" media="(min-width:85rem)"/>
+              <source srcset="/reel_image3_1x.jpg" media="(min-width:75rem)"/>
+              <source srcset="/reel_image3_2x.jpg" media="(min-width:40rem)"/>
+              <img src="/reel_image3_3x.jpg" alt="Profile Picture" loading="lazy" decoding="async"/>
             </picture>
             <picture>
               <source srcset="/reel_imagehd_2.jpg" media="(min-width:85rem)"/>
@@ -43,7 +43,7 @@ export default function About(){
               <source srcset="/reel_imagehd_7.jpg" media="(min-width:85rem)"/>
               <source srcset="/reel_image7_1x.jpg" media="(min-width:75rem)"/>
               <source srcset="/reel_image7_2x.jpg" media="(min-width:40rem)"/>
-              <img src="src/client/assets/reel_image7_3x.jpg" alt="me at bryce canyon" loading="lazy" decoding="async"/>
+              <img src="/reel_image7_3x.jpg" alt="me at bryce canyon" loading="lazy" decoding="async"/>
             </picture>
            <frame-l ratio="1:1">
            </frame-l>
