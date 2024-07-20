@@ -1,6 +1,7 @@
 import express from "express";
 import ViteExpress from "vite-express";
 import axios from "axios";
+import { env } from "node:process";
 
 const app = express();
 const {
@@ -10,9 +11,8 @@ const headers = {
   'Content-Type': 'application/x-www-form-urlencoded',
   'Cross-Origin-Resource-Policy': 'cross-origin',
   'User-Agent': 'PostmanDiscogs/1.0',
-  'Authorization': `OAuth oauth_consumer_key="${process.env.API_KEY}",oauth_token="${process.env.API_TOKEN}",oauth_signature_method="PLAINTEXT",oauth_timestamp="${Math.floor(Date.now() / 1000)}",oauth_nonce="${randomBytes(16).toString('hex')}",oauth_version="1.0",oauth_signature="${process.env.OAUTH_SIGNATURE}"`
-};
-
+  'Authorization': `OAuth oauth_consumer_key="${process.env.VITE_API_KEY}",oauth_token="${process.env.API_TOKEN}",oauth_signature_method="PLAINTEXT",oauth_timestamp="${Math.floor(Date.now() / 1000)}",oauth_nonce="${randomBytes(16).toString('hex')}",oauth_version="1.0",oauth_signature="${process.env.OAUTH_SIGNATURE}"`
+};env
 
 app.get('/api/records', async (req, res) => {
   try {
