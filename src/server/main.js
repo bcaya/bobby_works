@@ -16,7 +16,8 @@ const headers = {
 
 app.get('/api/records', async (req, res) => {
   try {
-    const response = await axios.get('https://api.discogs.com/users/ghostly64/collection/folders/7261507/releases', { headers});
+    const response = await axios.get('https://api.discogs.com/users/ghostly64/collection/folders/7261507/releases', 
+       headers);
     res.json(response.data);
   } catch (error) {
     console.error(error);
