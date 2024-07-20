@@ -28,30 +28,30 @@ export default function About(){
               <img src="src/client/assets/reel_image3_3x.jpg" alt="Profile Picture" loading="lazy" decoding="async"/>
             </picture>
             <picture>
-              <source srcset="src/client/assets/reel_imagehd_2.jpg" media="(min-width:85rem)"/>
-              <source srcset="src/client/assets/reel_image2_1x.jpg" media="(min-width:75rem)"/>
-              <source srcset="src/client/assets/reel_image2_2x.jpg" media="(min-width:40rem)"/>
-              <img src="src/client/assets/reel_image2_3x.jpg" alt="my listening station." loading="lazy" decoding="async"/>
+              <source srcset="/reel_imagehd_2.jpg" media="(min-width:85rem)"/>
+              <source srcset="/reel_image2_1x.jpg" media="(min-width:75rem)"/>
+              <source srcset="/reel_image2_2x.jpg" media="(min-width:40rem)"/>
+              <img src="/reel_image2_3x.jpg" alt="my listening station." loading="lazy" decoding="async"/>
             </picture>
             <picture>
-              <source srcset="src/client/assets/reel_imagehd_6.jpg" media="(min-width:85rem)"/>
-              <source srcset="src/client/assets/reel_image6_1x.jpg" media="(min-width:75rem)"/>
-              <source srcset="src/client/assets/reel_image6_2x.jpg" media="(min-width:40rem)"/>
-              <img src="src/client/assets/reel_image6_3x.jpg" alt="drawing of cactuc man" loading="lazy" decoding="async"/>
+              <source srcset="/reel_imagehd_6.jpg" media="(min-width:85rem)"/>
+              <source srcset="/reel_image6_1x.jpg" media="(min-width:75rem)"/>
+              <source srcset="/reel_image6_2x.jpg" media="(min-width:40rem)"/>
+              <img src="/reel_image6_3x.jpg" alt="drawing of cactuc man" loading="lazy" decoding="async"/>
             </picture>
               <picture>
-              <source srcset="src/client/assets/reel_imagehd_7.jpg" media="(min-width:85rem)"/>
-              <source srcset="src/client/assets/reel_image7_1x.jpg" media="(min-width:75rem)"/>
-              <source srcset="src/client/assets/reel_image7_2x.jpg" media="(min-width:40rem)"/>
+              <source srcset="/reel_imagehd_7.jpg" media="(min-width:85rem)"/>
+              <source srcset="/reel_image7_1x.jpg" media="(min-width:75rem)"/>
+              <source srcset="/reel_image7_2x.jpg" media="(min-width:40rem)"/>
               <img src="src/client/assets/reel_image7_3x.jpg" alt="me at bryce canyon" loading="lazy" decoding="async"/>
             </picture>
            <frame-l ratio="1:1">
            </frame-l>
             <picture>
               <source srcset="/reel_imagehd_5.jpg" media="(min-width:85rem)"/>
-              <source srcset="src/client/assets/reel_image5_1x.jpg" media="(min-width:75rem)"/>
-              <source srcset="src/client/assets/reel_image5_2x.jpg" media="(min-width:40rem)"/>
-              <img src="src/client/assets/reel_image5_3x.jpg" alt="a descr" loading="lazy" decoding="async"/>
+              <source srcset="/reel_image5_1x.jpg" media="(min-width:75rem)"/>
+              <source srcset="/reel_image5_2x.jpg" media="(min-width:40rem)"/>
+              <img src="/reel_image5_3x.jpg" alt="a descr" loading="lazy" decoding="async"/>
             </picture>
             <picture>
               <source srcset="/reel_imagehd_4.jpg" media="(min-width:85rem)"/>
@@ -60,10 +60,10 @@ export default function About(){
               <img src="/reel_image4_3x.jpg" alt="a descr" loading="lazy" decoding="async"/>
             </picture>
             <picture>
-              <source srcset="public/reel_imagehd_1.jpg" media="(min-width:85rem)"/>
-              <source srcset="public/reel_image1_1x.jpg" media="(min-width:75rem)"/>
-              <source srcset="src/client/assets/reel_image1_2x.jpg" media="(min-width:40rem)"/>
-              <img src="src/client/assets/reel_image1_3x.jpg" alt="Photography Interest image of Wendover Will" loading="lazy" decoding="async"/>
+              <source srcset="/reel_imagehd_1.jpg" media="(min-width:85rem)"/>
+              <source srcset="/reel_image1_1x.jpg" media="(min-width:75rem)"/>
+              <source srcset="/reel_image1_2x.jpg" media="(min-width:40rem)"/>
+              <img src="/reel_image1_3x.jpg" alt="Photography Interest image of Wendover Will" loading="lazy" decoding="async"/>
             </picture>
           </reel-l>
         </box-l>   
