@@ -1,6 +1,6 @@
 
 import axios from "axios";
-const baseUrl = process.env.REACT_APP_API_URL || 'http://localhost:3000';
+const baseUrl = process.env.VITE.REACT_APP_API_URL || 'http://localhost:3000';
 export const fetchFromDiscogs = async (endpoint, params) => {
   try {
       const response = await axios.get(`${baseUrl}/api/records`, {
