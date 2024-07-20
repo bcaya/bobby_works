@@ -1,6 +1,6 @@
 import React from 'react'
 import '../assets/StylesMain'
-
+import img1 from 'public/reel_imagehd_4.jpg'
 
 
 export default function About(){
@@ -48,16 +48,16 @@ export default function About(){
            <frame-l ratio="1:1">
            </frame-l>
             <picture>
-              <source srcset="src/client/assets/reel_imagehd_5.jpg" media="(min-width:85rem)"/>
+              <source srcset="/reel_imagehd_5.jpg" media="(min-width:85rem)"/>
               <source srcset="src/client/assets/reel_image5_1x.jpg" media="(min-width:75rem)"/>
               <source srcset="src/client/assets/reel_image5_2x.jpg" media="(min-width:40rem)"/>
               <img src="src/client/assets/reel_image5_3x.jpg" alt="a descr" loading="lazy" decoding="async"/>
             </picture>
             <picture>
-              <source srcset="public/reel_imagehd_4.jpg" media="(min-width:85rem)"/>
-              <source srcset="public/reel_image4_1x.jpg" media="(min-width:75rem)"/>
-              <source srcset="public/reel_image4_2x.jpg" media="(min-width:40rem)"/>
-              <img src="public/reel_image4_3x.jpg" alt="a descr" loading="lazy" decoding="async"/>
+              <source srcset="/reel_imagehd_4.jpg" media="(min-width:85rem)"/>
+              <source srcset="/reel_image4_1x.jpg" media="(min-width:75rem)"/>
+              <source srcset="/reel_image4_2x.jpg" media="(min-width:40rem)"/>
+              <img src="/reel_image4_3x.jpg" alt="a descr" loading="lazy" decoding="async"/>
             </picture>
             <picture>
               <source srcset="public/reel_imagehd_1.jpg" media="(min-width:85rem)"/>
