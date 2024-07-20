@@ -1,23 +1,21 @@
 import express from "express";
 import ViteExpress from "vite-express";
 import axios from "axios";
-
-
+import 'dotenv/config'
+import crypto from 'node:crypto'
 const app = express();
-const {
-  randomBytes,
-} = await import('node:crypto');
-const headers = {
-  'Content-Type': 'application/x-www-form-urlencoded',
-  'Cross-Origin-Resource-Policy': 'cross-origin',
-  'User-Agent': 'PostmanDiscogs/1.0',
-  'Authorization': `OAuth oauth_consumer_key="${process.env.API_KEY}",oauth_token="${process.env.API_TOKEN}",oauth_signature_method="PLAINTEXT",oauth_timestamp="${Math.floor(Date.now() / 1000)}",oauth_nonce="${randomBytes(16).toString('hex')}",oauth_version="1.0",oauth_signature="${process.env.OAUTH_SIGNATURE}"`
-};
+
 
 app.get('/api/records', async (req, res) => {
   try {
-    const response = await axios.get('https://api.discogs.com/users/ghostly64/collection/folders/7261507/releases', 
-       headers);
+    const response = await axios.get('https://api.discogs.com/users/ghostly64/collection/folders/7261507/releases', {
+      headers: {
+         'Content-Type': 'application/x-www-form-urlencoded',
+  'Cross-Origin-Resource-Policy': 'cross-origin',
+  'User-Agent': 'PostmanDiscogs/1.0',
+  'Authorization': `OAuth oauth_consumer_key="${process.env.OAUTH_CONSUMER_KEY}",oauth_token="${process.env.OAUTH_TOKEN}",oauth_signature_method="PLAINTEXT",oauth_timestamp="${Math.floor(Date.now() / 1000)}",oauth_nonce="${crypto.randomBytes(16).toString('hex')}",oauth_version="1.0",oauth_signature="${process.env.OAUTH_SIGNATURE}"`
+      }
+    });
     res.json(response.data);
   } catch (error) {
     console.error(error);
@@ -28,7 +26,12 @@ app.get('/api/records', async (req, res) => {
 app.get(`/api/records/:id`, async (req, res) => {
   try {
     const response = await axios.get(`https://api.discogs.com/releases/${req.params.id}`, {
-      headers
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded', 
+        'Cross-Origin-Resource-Policy': 'cross-origin',
+        'User-Agent': 'PostmanDiscogs/1.0', 
+        'Authorization': 'OAuth oauth_consumer_key="bwcIEfydSSfolgDTrYVs",oauth_token="oBskqeOIwChEGfMterEcgJbqDeehUwHJtIBclcBO",oauth_signature_method="PLAINTEXT",oauth_timestamp="1714405046",oauth_nonce="3ab2ecbd-7acc-4441-9389-29688543862f",oauth_version="1.0",oauth_signature="HLVDfYNOfRrUfsuELZgOxPyIXPPCNyJE%26nUhFDkdvUDelDsvSHhFKQgwHdosAoPrNfKhoNnqv"'
+      }
     });
     return res.json(response.data);
   } catch (error) {
