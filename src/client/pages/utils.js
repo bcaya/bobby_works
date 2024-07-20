@@ -3,7 +3,7 @@ import axios from "axios";
 const apiUrl = process.env.API_URL || 'http://localhost:3000';
 export const fetchFromDiscogs = async (endpoint, params) => {
   try {
-      const response = await axios.get(`http://localhost:3000/api/records`, {
+      const response = await axios.get(`${apiUrl}}/api/records`, {
           params: params,
       });
       return response;
