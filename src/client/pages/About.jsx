@@ -33,20 +33,20 @@ export default function About(){
               <source srcset="/reel_image2_2x.jpg" media="(min-width:40rem)"/>
               <img src="/reel_image2_3x.jpg" alt="my listening station." loading="lazy" decoding="async"/>
             </picture>
+            <frame-l ratio="1:1">
             <picture>
               <source srcset="/reel_imagehd_6.jpg" media="(min-width:85rem)"/>
               <source srcset="/reel_image6_1x.jpg" media="(min-width:75rem)"/>
               <source srcset="/reel_image6_2x.jpg" media="(min-width:40rem)"/>
               <img src="/reel_image6_3x.jpg" alt="drawing of cactuc man" loading="lazy" decoding="async"/>
             </picture>
+            </frame-l>
               <picture>
               <source srcset="/reel_imagehd_7.jpg" media="(min-width:85rem)"/>
               <source srcset="/reel_image7_1x.jpg" media="(min-width:75rem)"/>
               <source srcset="/reel_image7_2x.jpg" media="(min-width:40rem)"/>
               <img src="/reel_image7_3x.jpg" alt="me at bryce canyon" loading="lazy" decoding="async"/>
             </picture>
-           <frame-l ratio="1:1">
-           </frame-l>
             <picture>
               <source srcset="/reel_imagehd_5.jpg" media="(min-width:85rem)"/>
               <source srcset="/reel_image5_1x.jpg" media="(min-width:75rem)"/>

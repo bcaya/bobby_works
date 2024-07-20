@@ -11,7 +11,7 @@ export default function Projects(){
           <stack-l>
           <Link to="/records" className="projects">
             <frame-l ratio="1:1">
-            <img src="src/client/assets/project_1.png" />
+            <img src="/project_1.png" />
             </frame-l>
             </Link>
             <cluster-l>
@@ -49,11 +49,12 @@ export default function Projects(){
           <box-l>
             <stack-l>
             <frame-l ratio="1:1">
-              <img src="src/client/assets/React_Components.png" alt="image of React component Library project "/>
+              <img src="/React_Components.png" alt="image of React component Library project "/>
             </frame-l>
             <cluster-l>
-              <p>HTML</p>
-              <p>SCSS</p>
+              <p>React</p>
+              <p>React Reusable Components</p>
+              <p>CSS</p>
               <p>Python</p>
               <p>Flask</p>
             </cluster-l>
