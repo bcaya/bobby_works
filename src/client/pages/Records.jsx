@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import '../assets/StylesMain'
+import '../../../public/StylesMain'
 import { fetchFromDiscogs } from './utils'
 import { PacmanLoader } from 'react-spinners'
 export default function Records(){

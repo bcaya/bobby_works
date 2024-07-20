@@ -1,9 +1,9 @@
 
 import axios from "axios";
-const apiUrl = process.env.API_URL || 'http://localhost:3000';
+const baseUrl = process.env.REACT_APP_API_BASE_URL || 'http://localhost:3000';
 export const fetchFromDiscogs = async (endpoint, params) => {
   try {
-      const response = await axios.get(`${apiUrl}}/api/records`, {
+      const response = await axios.get(`${baseUrl}/api/records`, {
           params: params,
       });
       return response;
@@ -15,7 +15,7 @@ export const fetchFromDiscogs = async (endpoint, params) => {
 
 export async function fetchReleaseData(endpoint ="") {
     try {
-        const response = await axios.get(`http://localhost:3000/api/records/${endpoint}`);
+        const response = await axios.get(`${baseUrl}/api/records/${endpoint}`);
         return response.data;
     } catch (error) {
         console.error("Error fetching data from Discogs API:", error);

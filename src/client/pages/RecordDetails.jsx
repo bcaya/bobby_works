@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link, useParams, useLocation} from 'react-router-dom'
-import '../assets/StylesMain'
+import '../../../public/StylesMain'
 import { fetchReleaseData } from './utils'
 
 export default function RecordDetailPage(){
