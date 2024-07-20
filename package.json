@@ -1,7 +1,7 @@
 {
   "name": "vite-react-starter",
   "private": true,
-  "version": "1.00",
+  "version": "1.01",
   "type": "module",
   "scripts": {
     "dev": "nodemon src/server/main.js -w src/server",
