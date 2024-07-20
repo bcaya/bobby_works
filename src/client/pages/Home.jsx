@@ -6,6 +6,7 @@ import '../../../public/StylesMain'
 import Contact from './Contact'
 
 export default function Home(){
+
   const scrollToTop = () => {
     scroll.scrollToTop();
   };

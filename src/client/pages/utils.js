@@ -1,6 +1,6 @@
 
 import axios from "axios";
-import { env } from "node:process";
+
 const baseUrl = import.meta.env.VITE_REACT_APP_API_URL
 export const fetchFromDiscogs = async (endpoint, params) => {
     console.log(baseUrl)
