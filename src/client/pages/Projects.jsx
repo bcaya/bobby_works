@@ -55,7 +55,7 @@ export default function Projects(){
               <p>React</p>
               <p>React Reusable Components</p>
               <p>CSS</p>
-              <p>Python</p>
+            
               <p>Flask</p>
             </cluster-l>
             <h3>React Component Library</h3>
