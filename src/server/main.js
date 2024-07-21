@@ -3,7 +3,7 @@ import ViteExpress from "vite-express";
 import axios from "axios";
 import crypto from 'node:crypto'
 const app = express();
-
+ViteExpress.config({ mode: "production" })
 const getOAuthHeader = () => {
   return `OAuth oauth_consumer_key="${process.env.API_KEY}",oauth_token="${process.env.API_TOKEN}",oauth_signature_method="PLAINTEXT",oauth_timestamp="${Math.floor(Date.now() / 1000)}",oauth_nonce="${crypto.randomBytes(16).toString('hex')}",oauth_version="1.0",oauth_signature="${process.env.OAUTH_SIGNATURE}"`;
 };
@@ -53,3 +53,4 @@ app.get(`/api/lastfm`, async(req,res) => {
 ViteExpress.listen(app, 3000, () =>
   console.log("Server is listening on port 3001 ..."),
 );
+
