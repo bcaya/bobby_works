@@ -11,7 +11,7 @@ export default function Records(){
   const [loading, setLoading] = React.useState(null)
   const [query, setQuery] = React.useState('');
   React.useEffect(() => {
-   
+  
     async function loadRecords(){
       setLoading(true)
       try{

@@ -1,7 +1,7 @@
 import express from "express";
 import ViteExpress from "vite-express";
 import axios from "axios";
-import 'dotenv/config'
+import "dotenv/config.js";
 import crypto from 'node:crypto'
 const app = express();
 
@@ -49,6 +49,6 @@ app.get(`/api/lastfm`, async(req,res) => {
   };
   return response.data;
 })
-ViteExpress.listen(app, 3000, () =>
-  console.log("Server is listening on port 3000..."),
+ViteExpress.listen(app, 3001, () =>
+  console.log("Server is listening on port 3001 ..."),
 );
