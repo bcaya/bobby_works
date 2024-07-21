@@ -1,7 +1,7 @@
 
 import axios from "axios";
 
-const baseUrl = import.meta.env.OAUTH_TOKEN
+const baseUrl = import.meta.env.VITE_REACT_APP_API_URL
 export const fetchFromDiscogs = async (endpoint, params) => {
     
   try {
