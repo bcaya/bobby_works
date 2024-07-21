@@ -5,7 +5,7 @@ const baseUrl = import.meta.env.VITE_REACT_APP_API_URL
 export const fetchFromDiscogs = async (endpoint, params) => {
     
   try {
-      const response = await axios.get(`${baseUrl}/records`, {
+      const response = await axios.get(`/records`, {
           params: params,
       });
       return response;
