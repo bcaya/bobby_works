@@ -49,6 +49,6 @@ app.get(`/api/lastfm`, async(req,res) => {
   };
   return response.data;
 })
-ViteExpress.listen(app, 3001, () =>
+ViteExpress.listen(app, 3000, () =>
   console.log("Server is listening on port 3001 ..."),
 );
